@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - TotoroTech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>TotoroTech</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quemSomos.html">Quem Somos</a></li>
+        <li><a href="portfolio.html" class="ativo">Portfólio</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="portfolio-header">
+        <h2>Nosso Portfólio</h2>
+        <p>Conheça alguns dos projetos que desenvolvemos com dedicação, criatividade e as melhores tecnologias do mercado.</p>
+      </div>
+
+      <!-- Filtros -->
+      <div class="filtros-container">
+        <button class="filtro-btn ativo" onclick="filtrarProjetos('todos')">Todos</button>
+        <button class="filtro-btn" onclick="filtrarProjetos('frontend')">Front-end</button>
+        <button class="filtro-btn" onclick="filtrarProjetos('backend')">Back-end</button>
+        <button class="filtro-btn" onclick="filtrarProjetos('fullstack')">Full Stack</button>
+        <button class="filtro-btn" onclick="filtrarProjetos('api')">API</button>
+        <button class="filtro-btn" onclick="filtrarProjetos('java')">Java</button>
+      </div>
+
+      <!-- Grid de Projetos -->
+      <div class="projetos-grid" id="projetos-grid">
+        <!-- Projeto 1 -->
+        <div class="projeto-card" data-categoria="frontend">
+          <div class="projeto-imagem">
+            <img src="img/img/coding7.png.jpg" alt="To-Do List">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Front-end</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">To-Do List</h3>
+            <p class="projeto-descricao">Aplicação intuitiva para gerenciamento de tarefas com interface limpa e responsiva.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="projeto-card" data-categoria="frontend">
+          <div class="projeto-imagem">
+            <img src="img/img/coding10.png.jpg" alt="Relógio Digital">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Front-end</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Relógio Digital</h3>
+            <p class="projeto-descricao">Relógio digital moderno com design elegante e funcionalidades interativas.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="projeto-card" data-categoria="frontend">
+          <div class="projeto-imagem">
+            <img src="img/img/coding3.png.jpg" alt="Quiz Interativo">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Front-end</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Quiz Interativo</h3>
+            <p class="projeto-descricao">Plataforma de perguntas e respostas com diferentes categorias e níveis de dificuldade.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 4 -->
+        <div class="projeto-card" data-categoria="api">
+          <div class="projeto-imagem">
+            <img src="img/img/coding9.png.jpg" alt="Clima Atual">
+            <div class="projeto-tags">
+              <span class="tag-categoria">API</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Clima Atual</h3>
+            <p class="projeto-descricao">Aplicação meteorológica em tempo real com dados de diversas cidades.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">API</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 5 -->
+        <div class="projeto-card" data-categoria="api">
+          <div class="projeto-imagem">
+            <img src="img/img/coding2.png.jpg" alt="Dashboard de Estatísticas">
+            <div class="projeto-tags">
+              <span class="tag-categoria">API</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Dashboard de Estatísticas</h3>
+            <p class="projeto-descricao">Dashboard interativo com gráficos dinâmicos e análise de dados em tempo real.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">API</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 6 -->
+        <div class="projeto-card" data-categoria="api">
+          <div class="projeto-imagem">
+            <img src="img/img/coding11.png.jpg" alt="Mini Loja Virtual de Plantas">
+            <div class="projeto-tags">
+              <span class="tag-categoria">API</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Mini Loja Virtual</h3>
+            <p class="projeto-descricao">E-commerce de plantas com carrinho de compras e integração com API de pagamentos.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">API</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 7 -->
+        <div class="projeto-card" data-categoria="frontend">
+          <div class="projeto-imagem">
+            <img src="img/img/coding13.png.jpg" alt="Drag and Drop">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Front-end</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Tarefas com Drag and Drop</h3>
+            <p class="projeto-descricao">Sistema de gerenciamento de tarefas com funcionalidade de arrastar e soltar.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 8 -->
+        <div class="projeto-card" data-categoria="fullstack">
+          <div class="projeto-imagem">
+            <img src="img/img/coding6.png.jpg" alt="Pokedex">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Full Stack</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Pokedex</h3>
+            <p class="projeto-descricao">Enciclopédia Pokémon completa com dados detalhados e gráficos interativos.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">API</span>
+              <span class="tech-badge">Recharts</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 9 -->
+        <div class="projeto-card" data-categoria="backend">
+          <div class="projeto-imagem">
+            <img src="img/img/coding4.png.jpg" alt="Dashboard de Usuários">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Back-end</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Dashboard de Usuários</h3>
+            <p class="projeto-descricao">Sistema completo de gerenciamento de usuários com autenticação e permissões.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">Angular</span>
+              <span class="tech-badge">API REST</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 10 -->
+        <div class="projeto-card" data-categoria="fullstack">
+          <div class="projeto-imagem">
+            <img src="img/img/coding5.png.jpg" alt="Sistema de Ouvidoria">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Full Stack</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Sistema de Ouvidoria</h3>
+            <p class="projeto-descricao">Plataforma completa para gestão de reclamações, sugestões e feedbacks.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 11 -->
+        <div class="projeto-card" data-categoria="fullstack">
+          <div class="projeto-imagem">
+            <img src="img/img/coding12.png.jpg" alt="Plataforma de Cursos">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Full Stack</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Plataforma de Cursos</h3>
+            <p class="projeto-descricao">Plataforma EAD completa com aulas, quizzes e certificação.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 12 -->
+        <div class="projeto-card" data-categoria="java">
+          <div class="projeto-imagem">
+            <img src="img/img/coding14.png.jpg" alt="CRUD Spring Boot">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Java</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">CRUD com Spring Boot</h3>
+            <p class="projeto-descricao">API REST completa com Spring Boot e integração com MySQL.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">API REST</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 13 -->
+        <div class="projeto-card" data-categoria="java">
+          <div class="projeto-imagem">
+            <img src="img/img/coding.png.jpg" alt="Controle Financeiro">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Java</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Controle Financeiro</h3>
+            <p class="projeto-descricao">Sistema completo para gestão de finanças pessoais com gráficos e relatórios.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Chart.js</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 14 -->
+        <div class="projeto-card" data-categoria="java">
+          <div class="projeto-imagem">
+            <img src="img/img/coding8.png.jpg" alt="Sistema de Reservas">
+            <div class="projeto-tags">
+              <span class="tag-categoria">Java</span>
+            </div>
+          </div>
+          <div class="projeto-conteudo">
+            <h3 class="projeto-titulo">Sistema de Reservas</h3>
+            <p class="projeto-descricao">Plataforma para reservas em hotéis, cinemas e consultórios.</p>
+            <div class="projeto-tecnologias">
+              <span class="tech-badge">Java</span>
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Chart.js</span>
+            </div>
+            <a href="#" class="projeto-link" onclick="return false;">
+              Ver Projeto <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estatísticas -->
+      <div class="portfolio-stats">
+        <div class="stat-item">
+          <div class="stat-valor">14+</div>
+          <div class="stat-label">Projetos Entregues</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-valor">8+</div>
+          <div class="stat-label">Tecnologias</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-valor">100%</div>
+          <div class="stat-label">Satisfação</div>
+        </div>
+      </div>
+
+      <!-- Categorias Rápidas -->
+      <div class="categorias-rapidas">
+        <div class="categoria-item">
+          <div class="categoria-icone">
+            <i class="fas fa-code"></i>
+          </div>
+          <span>Front-end Moderno</span>
+        </div>
+        <div class="categoria-item">
+          <div class="categoria-icone">
+            <i class="fas fa-server"></i>
+          </div>
+          <span>Back-end Robusto</span>
+        </div>
+        <div class="categoria-item">
+          <div class="categoria-icone">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <span>Design Responsivo</span>
+        </div>
+        <div class="categoria-item">
+          <div class="categoria-icone">
+            <i class="fas fa-database"></i>
+          </div>
+          <span>Banco de Dados</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: 50px 0;">
+        <a href="contatos.html" class="botao-destaque" style="padding: 15px 40px;">
+          <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+          Solicite um Orçamento
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>TotoroTech</h3>
+        <p>Inovando seu mundo digital</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="quemSomos.html">Quem Somos</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contatos.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 TotoroTech. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function filtrarProjetos(categoria) {
+      // Atualizar botões ativos
+      document.querySelectorAll('.filtro-btn').forEach(btn => {
+        btn.classList.remove('ativo');
+      });
+      event.target.classList.add('ativo');
+      
+      // Filtrar projetos
+      const projetos = document.querySelectorAll('.projeto-card');
+      
+      projetos.forEach(projeto => {
+        if (categoria === 'todos') {
+          projeto.classList.remove('oculto');
+        } else {
+          if (projeto.dataset.categoria === categoria) {
+            projeto.classList.remove('oculto');
+          } else {
+            projeto.classList.add('oculto');
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

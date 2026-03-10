@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - TotoroTech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>TotoroTech</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="quemSomos.html">Quem Somos</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contatos.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="contato-hero">
+      <h2>Entre em Contato</h2>
+      <p>Estamos aqui para transformar suas ideias em realidade. Conte-nos sobre seu projeto e daremos vida à sua visão digital!</p>
+    </section>
+
+    <!-- Container Principal -->
+    <div class="contato-container">
+      <!-- Informações de Contato -->
+      <div class="contato-info">
+        <div class="info-header">
+          <h3>Informações de Contato</h3>
+          <p>Escolha a melhor forma de nos contatar. Estamos sempre disponíveis para atender você!</p>
+        </div>
+
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-icone">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-conteudo">
+              <h4>Telefone</h4>
+              <p>(83) 9 9609-8944</p>
+              <p style="font-size: 0.9em; color: var(--cor-terciaria);">Disponível de segunda a sexta, 8h às 18h</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icone">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-conteudo">
+              <h4>E-mail</h4>
+              <p>fernanda.lua.travassos@gmail.com</p>
+              <p style="font-size: 0.9em; color: var(--cor-terciaria);">Respondemos em até 24h</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icone">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-conteudo">
+              <h4>Localização</h4>
+              <p>Campina Grande - PB</p>
+              <p style="font-size: 0.9em; color: var(--cor-terciaria);">Polo tecnológico do Nordeste</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icone">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="info-conteudo">
+              <h4>Horário de Atendimento</h4>
+              <p>Segunda a Sexta: 8h às 18h</p>
+              <p>Sábado: 9h às 13h</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="redes-sociais">
+          <h4>Siga-nos nas redes sociais</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário de Contato -->
+      <div class="contato-form">
+        <div class="form-header">
+          <h3>Envie uma Mensagem</h3>
+          <p>Preencha o formulário abaixo e retornaremos o mais breve possível</p>
+        </div>
+
+        <form>
+          <div class="form-grupo">
+            <label class="form-label">
+              <i class="fas fa-user"></i>
+              Nome Completo *
+            </label>
+            <input type="text" class="form-input" placeholder="Digite seu nome completo" required>
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-label">
+              <i class="fas fa-envelope"></i>
+              E-mail *
+            </label>
+            <input type="email" class="form-input" placeholder="Digite seu melhor e-mail" required>
+          </div>
+
+          <!-- Opcional: Campo de telefone com máscara
+          <div class="form-grupo">
+            <label class="form-label">
+              <i class="fas fa-phone"></i>
+              Telefone
+            </label>
+            <input type="tel" class="form-input" placeholder="(83) 99999-9999" oninput="mascaraTelefone(this)">
+          </div>
+          -->
+
+          <div class="form-grupo">
+            <label class="form-label">
+              <i class="fas fa-comment"></i>
+              Assunto *
+            </label>
+            <input type="text" class="form-input" placeholder="Qual o assunto do seu contato?">
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-label">
+              <i class="fas fa-comment-dots"></i>
+              Comentário *
+            </label>
+            <textarea class="form-textarea" placeholder="Conte-nos sobre seu projeto, dúvida ou sugestão..."></textarea>
+          </div>
+
+          <button type="submit" class="form-botao">
+            <span>Enviar Mensagem</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Imagem Totoro -->
+    <div class="totoro-image-wrapper">
+      <img class="totoro-contact-image" src="img/img/rainy_totoro.png" alt="Totoro na chuva">
+      <p class="totoro-caption">
+        <i class="fas fa-quote-left"></i> 
+        Assim como Totoro, estamos aqui para proteger seus sonhos e transformá-los em realidade 
+        <i class="fas fa-quote-right"></i>
+      </p>
+    </div>
+
+    <!-- Modal de Feedback -->
+    <div id="feedback-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="img/img/contatoTotoro.png" alt="Totoro feliz" class="feedback-image">
+        <h3>Mensagem Enviada!</h3>
+        <p>Obrigado por entrar em contato. Retornaremos em breve!</p>
+        <button id="modal-ok" class="modal-botao">
+          <i class="fas fa-check-circle"></i>
+          OK
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>TotoroTech</h3>
+        <p>Inovando seu mundo digital</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="quemSomos.html">Quem Somos</a>
+        <a href="portfolio.html">Portfólio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contatos.html">Contato</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 TotoroTech. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="js/contato.js"></script>
+</body>
+</html>
