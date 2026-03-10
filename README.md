@@ -1,7 +1,3 @@
-Claro! Aqui está uma descrição profissional para o projeto TotoroTech, que pode ser utilizada em documentação, portfólio ou apresentações:
-
----
-
 # TotoroTech - Soluções Digitais Inovadoras
 
 ## Sobre o Projeto
